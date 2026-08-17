@@ -9,8 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="midori.css">
 
+<link rel="icon" type="image/png" href="mdcrfavicon.png">
 
-
+</head>
 <body>
 
 <header>
@@ -25,12 +26,6 @@
     </div>
   </nav>
 </header>
-
-<link rel="icon" type="png" href="mdcrfavicon.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-</head>
 
 <section class="utama" id="home">
   <div class="MASUK">
@@ -117,7 +112,7 @@
 </footer>
 
 <script>
- const scene = document.getElementById('scene');
+ const panel = document.querySelector('.panel');
  const btn = document.getElementById('aiToggle');
   const effVal = document.getElementById('effVal');
  const landfillVal = document.getElementById('landfillVal');
@@ -136,7 +131,7 @@
   }
 
   btn.addEventListener('click', () => {
-    const isOff = scene.classList.toggle('ai-off');
+    const isOff = panel.classList.toggle('ai-off');
    btn.textContent = isOff ? 'Turn AI Sorting On' : 'Turn AI Sorting Off';
  btn.setAttribute('aria-pressed', String(!isOff));
     applyState(isOff ? 'off' : 'on');
