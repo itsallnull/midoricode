@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>codegreen — midoricodecreators</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="mdcrfavicon.png">
+
+<!-- Fonts & CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="green.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html">← midoricode</a>
+  <span class="hand" style="font-size:1.3rem;color:var(--green-dk);">est. 2026</span>
+</header>
+
+<section class="intro">
+  <div class="eyebrow">MIDORICODE EXTENSION · DEVELOPER CREDITS</div>
+  <img src="codegreenlogo.png" alt="Code Green Logo" class="main-logo">
+  <p>Two coders, one circular mission — the small team behind midoricode's SDG 12 project.</p>
+</section>
+
+<main>
+  <div class="team">
+    <!-- Hanief -->
+    <div class="dev-row">
+      <div class="polaroid">
+        <div class="sig-area"><img src="null.jpeg" alt="Hanief photo"></div>
+        <img src="sign.png" alt="Hanief Signature" class="signature sig-left">
+        <div class="nickname hand">Hanief</div>
+      </div>
+      <div class="dev-info">
+        <span class="role">Team Lead &amp; Developer</span>
+        <h2>Muhammad Hanief Arif Al Majidi</h2>
+        <p>Rhythm Game Pro. Hates to code but likes to code. Researcher as his dream, and Archery as his hobby</p>
+      </div>
+    </div>
+
+    <!-- Fihri -->
+    <div class="dev-row">
+      <div class="polaroid">
+        <div class="sig-area"><img src="pwuihri.jpeg" alt="Fihri photo"></div>
+        <img src="sigf.png" alt="Fihri Signature" class="signature sig-right">
+        <div class="nickname hand">Fihri</div>
+      </div>
+      <div class="dev-info">
+        <span class="role">Co-Developer</span>
+        <h2>Fihri Attamamy</h2>
+        <p>Absolute Pro at Basketball, Likes to Watch Films, and Loves Mie Ayam</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="filmstrip">
+    <div class="cap">Class Of 2028, GATASMA</div>
+    <div class="frame"><img src="g1.jpeg" alt="GATASMA"></div>
+    <div class="frame"><img src="g2.jpeg" alt="26-27"></div>
+    <div class="frame"><img src="g3.jpeg" alt="MTsN 44 Jakarta"></div>
+    <div class="frame"><img src="g4.jpeg" alt="Tiga Tahun Bersama"></div>
+  </div>
+</main>
+
+<!-- Single Audio Element -->
+<audio id="bg-audio" src="lullaby.mp3"></audio>
+
+<!-- Music Player Control Widget -->
+<div class="music-player-bar">
+  <div class="music-meta">
+    <div class="music-disc">🎵</div>
+    <div class="music-title-wrap">
+      <span id="song-title" class="song-title">SING_ME_A_LULLABY.SRM</span>
+      <span id="song-subtitle" class="song-subtitle">eden_essence · FNF Lullaby Reboot OST</span>
+    </div>
+  </div>
+  <div class="music-controls">
+    <!-- Previous Button -->
+    <button id="prev-btn" class="audio-btn secondary" aria-label="Previous Track">
+      <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+    </button>
+    <!-- Mute / Unmute Button -->
+    <button id="mute-btn" class="audio-btn secondary" aria-label="Mute / Unmute Music">
+      <svg id="icon-volume" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      <svg id="icon-muted" viewBox="0 0 24 24" style="display:none;"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+    </button>
+    <!-- Play / Pause Button -->
+    <button id="audio-btn" class="audio-btn" aria-label="Play Music">
+      <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icon-pause" viewBox="0 0 24 24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </button>
+    <!-- Next Button -->
+    <button id="next-btn" class="audio-btn secondary" aria-label="Next Track">
+      <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+    </button>
+  </div>
+</div>
+
+<footer>
+  Built with green intentions by <span class="hand">Hanief</span> &amp; <span class="hand">Fihri</span>
+</footer>
+
+<script>
+  const songs = [
+    {
+      title: "SING_ME_A_LULLABY.SRM",
+      subtitle: "eden_essence · FNF Lullaby Reboot OST",
+      src: "lullaby.mp3"
+    },
+    {
+      title: "Hotel Room",
+      subtitle: "Ax and the Hatchetmen · Hotel Room",
+      src: "Hotel Room.mp3"
+    },
+    {
+      title: "Sunflower",
+      subtitle: "Rex Orange County · Sunflower",
+      src: "Sunflower.mp3"
+    },
+    {
+      title: "After The Storm",
+      subtitle: "Kali Uchis · Isolation",
+      src: "After The Storm.mp3"
+    },
+    {
+      title: "November",
+      subtitle: "Tyler The Creator · Flower Boy",
+      src: "November.mp3"
+    },
+    {
+      title: "Charlie's Inferno (60s Mix)",
+      subtitle: "(COVER) Matt Dusk · Charlie's Inferno (60s Mix)",
+      src: "Charlie's Inferno.mp3"
+    }
+  ];
+
+  let currentSongIndex = 0;
+
+  const audio = document.getElementById('bg-audio');
+  const playBtn = document.getElementById('audio-btn');
+  const muteBtn = document.getElementById('mute-btn');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+
+  const songTitleEl = document.getElementById('song-title');
+  const songSubtitleEl = document.getElementById('song-subtitle');
+
+  const playIcon = document.getElementById('icon-play');
+  const pauseIcon = document.getElementById('icon-pause');
+  const volumeIcon = document.getElementById('icon-volume');
+  const mutedIcon = document.getElementById('icon-muted');
+
+  function loadSong(index) {
+    const track = songs[index];
+    audio.src = track.src;
+    songTitleEl.textContent = track.title;
+    songSubtitleEl.textContent = track.subtitle;
+  }
+
+  function playTrack() {
+    audio.play();
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+  }
+
+  function pauseTrack() {
+    audio.pause();
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+  }
+
+  playBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      playTrack();
+    } else {
+      pauseTrack();
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    loadSong(currentSongIndex);
+    playTrack();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+    loadSong(currentSongIndex);
+    playTrack();
+  });
+
+  audio.addEventListener('ended', () => {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    loadSong(currentSongIndex);
+    playTrack();
+  });
+
+  muteBtn.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    volumeIcon.style.display = audio.muted ? 'none' : 'block';
+    mutedIcon.style.display = audio.muted ? 'block' : 'none';
+  });
+</script>
+
+</body>
+</html>

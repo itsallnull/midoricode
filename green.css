@@ -1,0 +1,204 @@
+  :root{
+    --cream:#F7F3E9; --cream2:#FBF9F3; --ink:#1C1B17; --muted:#6B6558;
+    --green:#3D7A45; --green-dk:#2C5B33; --tape:#EADFC0; --line:#E4DDC9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif; line-height:1.6;
+    background-image:radial-gradient(var(--line) 1px, transparent 1px);
+    background-size:22px 22px;
+  }
+
+.main-logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 16px auto 12px;
+}
+
+  h1,h2{font-family:'Poppins',sans-serif; font-weight:700;}
+  .hand{font-family:'Caveat',cursive;}
+  .wrap{max-width:1040px; margin:0 auto; padding:0 24px;}
+
+  header{padding:22px 24px; display:flex; justify-content:space-between; align-items:center; max-width:1040px; margin:0 auto;}
+  header a{color:var(--green-dk); text-decoration:none; font-weight:600; font-size:.92rem;}
+  header a:hover{text-decoration:underline;}
+
+  .intro{text-align:center; padding:20px 24px 50px;}
+  .eyebrow{color:var(--green-dk); font-family:'JetBrains Mono',monospace; font-size:.8rem; letter-spacing:.05em;}
+  .intro h1{font-size:clamp(2rem,4.5vw,2.7rem); margin:10px 0 8px;}
+  .intro p{color:var(--muted); max-width:480px; margin:0 auto;}
+
+  main{max-width:1040px; margin:0 auto; padding:0 24px 60px; display:grid; grid-template-columns:1fr 230px; gap:40px;}
+  .team{display:flex; flex-direction:column; gap:46px;}
+
+  .dev-row{display:flex; align-items:center; gap:28px;}
+  .dev-row:nth-child(2){flex-direction:row-reverse; text-align:right;}
+
+  /* gambar i ama fren */
+  .polaroid{
+    background:#fff; padding:14px 14px 40px; width:210px; flex-shrink:0;
+    box-shadow:0 12px 24px rgba(28,27,23,.15); 
+    position:relative; 
+    overflow:visible !important; 
+    transition:transform .25s ease;
+    z-index:1;
+  }
+  .dev-row:nth-child(1) .polaroid{transform:rotate(-4deg);}
+  .dev-row:nth-child(2) .polaroid{transform:rotate(4deg);}
+  .polaroid:hover{transform:rotate(0deg) scale(1.04); z-index:10;}
+  .polaroid::before{
+    content:''; position:absolute; top:-10px; left:50%; transform:translateX(-50%) rotate(-3deg);
+    width:70px; height:22px; background:var(--tape); opacity:.8; z-index:2;
+  }
+  
+  .sig-area{background:#F2EFE6; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .sig-area img{width:100%; height:100%; object-fit:cover;}
+  .nickname{text-align:center; font-size:1.7rem; margin-top:8px;}
+
+  /*ttd*/
+  .signature {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 99;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  .sig-left {
+    bottom: 25px;
+    left: -20px;
+    transform: rotate(-10deg);
+  }
+
+  .sig-right {
+    bottom: 25px;
+    right: -20px;
+    transform: rotate(10deg);
+  }
+
+  .dev-info .role{display:inline-block; background:var(--green); color:#fff; font-size:.76rem; font-weight:600; padding:4px 12px; border-radius:20px; margin-bottom:8px;}
+  .dev-info h2{font-size:1.25rem; margin-bottom:6px;}
+  .dev-info p{color:var(--muted); font-size:.94rem; max-width:340px;}
+  .dev-row:nth-child(2) .dev-info p{margin-left:auto;}
+
+  .filmstrip{background:var(--ink); padding:14px 10px; border-radius:6px; align-self:start; position:sticky; top:24px;}
+  .filmstrip .cap{color:var(--cream); font-family:'Caveat',cursive; font-size:1.2rem; text-align:center; margin-bottom:8px;}
+  .filmstrip .frame {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom:8px;
+  }
+  .filmstrip .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ampun dj */
+  .music-player-bar {
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(28, 27, 23, 0.08);
+  }
+  .music-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+  }
+  .music-disc {
+    width: 36px;
+    height: 36px;
+    background: var(--cream2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .music-title-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .song-title {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .song-subtitle {
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .music-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .audio-btn {
+    background: var(--green);
+    color: #FFF;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  .audio-btn:hover {
+    background: var(--green-dk);
+    transform: scale(1.05);
+  }
+  .audio-btn.secondary {
+    background: var(--cream2);
+    color: var(--muted);
+    border: 1px solid var(--line);
+  }
+  .audio-btn.secondary:hover {
+    background: var(--tape);
+    color: var(--ink);
+  }
+  .audio-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+
+  footer{text-align:center; padding:10px 24px 44px; color:var(--muted); font-size:.86rem;}
+  footer .hand{font-size:1.3rem; color:var(--green-dk);}
+
+  @media (max-width: 760px) {
+    main { grid-template-columns: 1fr; }
+    .filmstrip {
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .filmstrip .cap { grid-column: 1 / -1; }
+    .dev-row, .dev-row:nth-child(2) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .dev-row:nth-child(2) .dev-info p { margin-left: 0; }
+  }
